@@ -1,0 +1,102 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+// example-3
+.example-3 {
+  background-color: #fff4e6;
+  padding: 30px 15px;
+  .card-holder {
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+    }
+    .item {
+      margin: 0 0 30px;
+      border: 1px solid #fcb65d;
+      border-radius: 3px;
+      transition: box-shadow 0.5s ease-in;
+      @media (min-width: 768px) {
+        flex-basis: 31%;
+        // to align the buttons end of the coloumn
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .item--header {
+        text-align: center;
+        background-color: #0C1733;
+        padding: 30px 15px;
+        margin-bottom: 60px;
+        h3 {
+          margin: 0;
+          text-transform: uppercase;
+          color: #92E81C;
+          font-size: 36px;
+        }
+        p {
+          margin: 0;
+          .price {
+            color: white;
+            font-size: 22px;
+          }
+        }
+      }
+      ul {
+        margin: 0;
+        @media (min-width: 768px) {
+          flex: 1;
+          // to make the ul equal in height and start from the beginning/top
+        }
+        li {
+          font-weight: 100;
+          font-size: 1.1em;
+          line-height: 1.7;
+        }
+      }
+      .link {
+        padding: 30px 15px;
+        a {
+          display: inline-block;
+          background-color: #92E91F;
+          padding: 10px 30px;
+          color: #0C1733;
+          font-size: 16px;
+          font-weight: 700;
+          border-radius: 7px;
+          text-transform: capitalize;
+        }
+      }
+    }
+    .item:hover {
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    }
+  }
+}
+
+// ribbon
+.especial-item {
+  position: relative;
+  overflow: hidden;
+}
+.ribbon {
+  max-width: 100%;
+  width: 180px;
+  background-color: red;
+  color: white;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  text-shadow: 2px 2px #0C1733;
+  box-shadow: 2px 3px 10px #000000;
+  font-weight: bold;
+  padding: 7px 5px;
+  transform: rotate(-45deg);
+  transform-origin: 50px 90px;
+}

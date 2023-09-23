@@ -1,0 +1,127 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.example-3 {
+  background-color: #fff4e6;
+  padding: 30px 15px;
+}
+@media (min-width: 768px) {
+  .example-3 .card-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+.example-3 .card-holder .item {
+  margin: 0 0 30px;
+  border: 1px solid #fcb65d;
+  border-radius: 3px;
+  -webkit-transition: -webkit-box-shadow 0.5s ease-in;
+  transition: -webkit-box-shadow 0.5s ease-in;
+  transition: box-shadow 0.5s ease-in;
+  transition: box-shadow 0.5s ease-in, -webkit-box-shadow 0.5s ease-in;
+}
+@media (min-width: 768px) {
+  .example-3 .card-holder .item {
+    -ms-flex-preferred-size: 31%;
+        flex-basis: 31%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+.example-3 .card-holder .item .item--header {
+  text-align: center;
+  background-color: #0C1733;
+  padding: 30px 15px;
+  margin-bottom: 60px;
+}
+.example-3 .card-holder .item .item--header h3 {
+  margin: 0;
+  text-transform: uppercase;
+  color: #92E81C;
+  font-size: 36px;
+}
+.example-3 .card-holder .item .item--header p {
+  margin: 0;
+}
+.example-3 .card-holder .item .item--header p .price {
+  color: white;
+  font-size: 22px;
+}
+.example-3 .card-holder .item ul {
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .example-3 .card-holder .item ul {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+.example-3 .card-holder .item ul li {
+  font-weight: 100;
+  font-size: 1.1em;
+  line-height: 1.7;
+}
+.example-3 .card-holder .item .link {
+  padding: 30px 15px;
+}
+.example-3 .card-holder .item .link a {
+  display: inline-block;
+  background-color: #92E91F;
+  padding: 10px 30px;
+  color: #0C1733;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 7px;
+  text-transform: capitalize;
+}
+.example-3 .card-holder .item:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.especial-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.ribbon {
+  max-width: 100%;
+  width: 180px;
+  background-color: red;
+  color: white;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  text-shadow: 2px 2px #0C1733;
+  -webkit-box-shadow: 2px 3px 10px #000000;
+          box-shadow: 2px 3px 10px #000000;
+  font-weight: bold;
+  padding: 7px 5px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transform-origin: 50px 90px;
+          transform-origin: 50px 90px;
+}/*# sourceMappingURL=style.css.map */
